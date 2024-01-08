@@ -26,8 +26,6 @@ class MainActivity : AppCompatActivity() {
 
         flutterEngine = FlutterEngine(this)
 
-        //flutterEngine.navigationChannel.setInitialRoute("/rewards")
-
         flutterEngine.dartExecutor.executeDartEntrypoint(
             DartExecutor.DartEntrypoint.createDefault()
         )
