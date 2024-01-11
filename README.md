@@ -42,9 +42,9 @@ The next step is adding the dependencies to build.gradle
 
 ```sh
 dependencies {
-    debugImplementation 'com.example.flourish_android_flutter:flutter_debug:1.0'
-    profileImplementation 'com.example.flourish_android_flutter:flutter_profile:1.0'
-    releaseImplementation 'com.example.flourish_android_flutter:flutter_release:1.0'
+    debugImplementation 'com.example.flourish_flutter_module:flutter_debug:1.0'
+    profileImplementation 'com.example.flourish_flutter_module:flutter_profile:1.0'
+    releaseImplementation 'com.example.flourish_flutter_module:flutter_release:1.0'
 }
 ```
 
