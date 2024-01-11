@@ -9,9 +9,17 @@ This project is an example of how to integrate a native Android application with
 # Getting Started
 ___
 ## Configuration
+### Download dependencies
+To start the integration, you will need to download the dependencies of our Flutter module (AAR Files) and save it in a directory of your choice.
+
+URL to download:
+https://github.com/Flourish-savings/flourish-flutter-module-libs
+
+
 ### Settings repository
 
-To do that, edit settings.gradle in your host app so that it includes the local repository and the dependency:
+To do this, edit settings.gradle in your host application to include the location where you save the dependencies you downloaded in the previous step.
+
 ```sh
 dependencyResolutionManagement {
   repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
@@ -20,7 +28,7 @@ dependencyResolutionManagement {
     mavenCentral()
 
     maven {
-      url 'https://github.com/Flourish-savings/flourish-sdk-module-flutter/tree/main/build/host/outputs/repo'
+      url '[the/place/where/you/saved/the/dependencies]'
     }
     maven {
       url 'https://storage.googleapis.com/download.flutter.io'
@@ -137,5 +145,5 @@ class MainActivity : AppCompatActivity() {
 ___
 Inside this repository, you have an example to show how to integrate:
 
-https://github.com/Flourish-savings/flourish-android-flutter-example/blob/main/app/src/main/java/com/flourish/app/MainActivity.kt
+https://github.com/Flourish-savings/flourish-android-flutter-example/tree/main/app/src/main/java/com/flourish/app
 <br>
