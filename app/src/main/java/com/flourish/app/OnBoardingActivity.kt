@@ -35,11 +35,11 @@ class OnBoardingActivity : AppCompatActivity() {
 
         val jsonObject = JSONObject()
         try {
-            jsonObject.put("partnerId", "2476f19f-bf9c-4b52-9c51-a5cbf56fc89e")
-            jsonObject.put("secret", "4dc94959-1f7b-434b-bc98-c9cd3c9e3807")
-            jsonObject.put("env", "staging")
-            jsonObject.put("language", "en")
-            jsonObject.put("customerCode", "referral_1234")
+            jsonObject.put("partnerId", "YOUR-PARTNER-ID-HERE")
+            jsonObject.put("secret", "YOUR-SECRET-KEY-HERE")
+            jsonObject.put("env", "[staging/production]")
+            jsonObject.put("language", "[en/es/pt]")
+            jsonObject.put("customerCode", "YOUR-CUSTOMER-CODE-HERE")
         } catch (e: JSONException) {
             e.printStackTrace()
         }
